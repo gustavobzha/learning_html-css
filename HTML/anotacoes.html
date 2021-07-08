@@ -1,0 +1,91 @@
+<!-- Anotações HTML  -->
+
+<!-- tags: -->
+<head></head>
+<title></title> <!-- (title normalmente fica dentro de header) -->
+<body></body>
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+<br> <!--(break - quebra de linha) -->
+<p></p> <!-- - Parágrafos -->
+<hr> <!-- horizontal rule - linha horizontal -->
+<strong></strong> <!-- utilizar negrito -->
+<em></em> <!-- emphasis - texto em itálico -->
+<u></u> <!-- underline - linha abaixo da texto -->
+<strike</strike> <!-- - risco no meio do texto -->
+
+<!-- OBS: tanto negrito quanto itálico podem ser escritos com <b> e <i> respectivamente, mas não são mais recomendados -->
+
+<ul></ul>  <!-- unorded list - lista não ordenada -->
+<li> </li> <!-- list item - colocar os itens da lista, são colocados dentro de ul -->
+<!-- comentário -->
+<!-- a lista possui 3 tipos de marcação, que são elas: circle, square, disc -->
+<ul type="disc"> </ul> <!-- Dessa forma definimos o tipo de marcação que queremos na lista -->
+<ol></ol> <!--Orded list, ou seja, lista ordenada, uma lista numérica ou alfabética utilizando o type-->
+<!-- tipos de formatação da lista ordenada: 1, A, a, I, i -->
+<img src="caminho da imagem"> <!-- você consegue definir o tamanho da imagem com width e height -->
+<img src="caminho da imagem" width="640" height="480"> <!-- você consegue definir o tamanho da imagem com width e height -->
+<a href="link, podendo ser um site ou o caminho de outro arquivo html">Clique aqui</a> <!-- anchor - ancora  - utilizado para links-->
+
+<table> <!-- podemos formatar a borda da tabela com o atributo border="2", por exemplo ficando <table border="2"> -->
+    <tr> <!-- table row , linhas da tabela -->
+        <th></th> <!-- table header, cabeçalho da tabela --> 
+    </tr> 
+    <tr>
+        <td></td> <!-- table data, dados da tabela, que são as colunas da tabela -->
+        <td colspan="2"></td> <!-- table definindo que a coluna ocupará o espaço de duas colunas, mas coisa que dar um merge no excel) -->
+    </tr> 
+    <tr rowspan="2"></tr> <!-- assim como temos o colspan, temos o rowspan que segue a mesmo princípio -->
+</table>
+<!-- podemos utilizar align também na tabela ou nas linhas e colunhas , utilizando left, center ou right -->
+
+<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables">Estilizando tabelas</a>
+
+<form action="processa.php"> <!-- iniciando um formulário--> <!--com o action podemos passar para onde as informações desse formulário serão passadas -->
+    Login:<br>
+    input:<input type="text" name="login" value="nome padrão que fica dentro da caixa da texto"><br> <!-- name="login" está definindo uma variável para receber o texto-->
+
+    Senha:<br>
+    input:<input type="password" name="senha"> <!-- com o type password ele esconde a senha que está sendo digitada-->
+
+    input:<input type="button" value="Logar">
+    input:<input type="submit" value="Logar">
+
+
+    Sexo: <br>
+    <input type="radio" name="sexo" value="M">Masculino<br>
+    <input type="radio" name="sexo" value="F">Feminino<br>
+    <!-- radio é o aquela bolinha de seleção para escolher uma das opções, o variável no caso, sexo precisa ser a mesma
+    para ambos os inputs para que ao selecionar uma, a outra seja desmarcada, o value será o valor que irá receber ao
+    marcar uma das opções -->
+
+    Interesses<br>
+    <input type="checkbox" name="interesses"> Futebol <br>
+    <input type="checkbox" name="interesses"> Cursos <br>
+    <input type="checkbox" name="interesses"> Moda <br>
+    <br>
+
+    Estado <br>
+    <select name="estado">
+        <option value="sp">SP</option>
+        <option value="mg">MG</option>
+        <option value="rj">RJ</option>
+        <option value="rs">RS</option>
+    </select> <br> <br>
+<!--     Dessa forma será criada uma dropdown com as opções de estado, e o valor da variável estado será de acordo
+    com a qual o usuário selecionar
+ -->
+
+    Observações: <br>
+    <textarea name="observacoes" id="" cols="30" rows="10"></textarea>
+
+    <input type="submit" value="Cadastrar">
+
+</form>
+
+<!-- Caracteres Especiais -->
+<a href="https://sites.google.com/site/joakinetotecnologopb/tabela-de-acentuacao-e-caracteres-especiais-em-html">Caracteres especiais</a>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+    <title>Border</title>
+</head>
+<body>
+    
+    <div id="content">
+        Bordas<br>
+        Bordas<br>
+        Bordas<br>
+    </div>
+    <br>
+    <div id="content2">
+        Bordas<br>
+        Bordas<br>
+        Bordas<br>
+    </div>
+
+</body>
+
+<style>
+
+#content {
+    /* border: 15px outset red; */
+    /* As com a formatação dessa maneira conseguimos fazer uma formatação mais detalhada */
+    border-color: red green yellow blue;
+    border-width: 15px 10px 5px 1px;
+    border-style: solid dotted dashed outset;
+    /* Como pode ser visto as formatações são feitas no sentido horário */
+}
+
+#content2 {
+    border-color: red green yellow blue;
+    border-width: 15px 10px;
+    border-style: solid dotted ;
+    /* Quando se coloca apenas dois valores na formatação, uma se aplica as partes superior e inferior e a outra as laterais */
+}
+
+</style>
+</html>
